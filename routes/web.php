@@ -17,11 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('Solicitud', 'SolicitudController@Solicitud');
+Route::get('triangulo', 'TrianguloController@triangulo');
 
-Route::post('recepcionsolicitud',['as'=>'solicitud.recepcion', 'uses'=>'SolicitudController@recepcionsolicitud']);
-
-
-Route::get('triangulo', function () {
-    return view('triangulo');
-});
+Route::post('solucion', ['as' => 'triangulo.solucion', 'uses' => 'TrianguloController@solucion']);

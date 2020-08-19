@@ -14,23 +14,20 @@
   <body>
 
     <div class="container">
-      <h1>triangulo</h1>
+      <h1>calcular la hipotenusa de un triangulo rectangulo</h1>
       
-      <form action="{{ route('solicitud.recepcion') }}" method="post">
+      <form action="{{ route('triangulo.solucion') }}" method="post">
         @csrf
         <div class="form-group">
-            <label for="nombrecompleto">Nombre completo</label>
-            <input class="form-control" type="text" name="nombrecompleto" id="nombrecompleto" placeholder="Coloca tu nombre completo">
+            <label for="a"><b>Introdusca el primer cateto</b></label>
+            <input class="form-control" type="number" name="a" id="a" placeholder="ingrese un numero">
         </div>
         <div class="form-group">
-            <label for="material">Material</label>
-            <input type="text" class="form-control" name="material" id="material" placeholder="Especifique el material">
-        </div>
-        <div class="form-group">
-            <label for="cantidad">Cantidad</label>
-            <input class="form-control" type="number" name="cantidad" id="cantidad" placeholder="Especifique la cantidad">
-        </div>
-        <button class="btn btn-primary">Solicitar</button>
+            <label for="b"><b>Introdusca el segundo cateto</b></label>
+            <input class="form-control" type="number" name="b" id="b" placeholder="ingrese un numero">
+        
+        
+        <button class="btn btn-primary">Calcular</button>
       </form>
 
     </div>
@@ -43,3 +40,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   </body>
 </html>
+

@@ -8,15 +8,19 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title>Solicitud de material</title>
+    <title>triangulo</title>
     
   </head>
   <body>
 
     <div class="container">
-      <h1>Gracias puto</h1>
+      <h1>hipotenusa</h1>
       
-      
+      <p>A: {{ $a }}</p>
+      <p>B: {{ $b }}</p>
+      <p><b>hipotenusa:</b> <span class="text-primary">{{ $h1 }}</span> </p>
+     
+        
     </div>
     
 
